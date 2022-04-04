@@ -7,22 +7,20 @@ const leapYears = function(lYear)
         {
             if((lYear % 400 == 0) && (lYear % 100 == 0))
             {            
-                result = true;                    
-            }       
-            else
-            {
-                result = false;
+                return true;                    
             }
+            else return false;       
         }
-        
+        else
+        {
+            return true;
+        }
     }
     else
     {
-        result = false;
+        return false;
     }
-    //console.log(result);
-    return result
 }
-leapYears(1900);
+leapYears(700);
 // Do not edit below this line
 module.exports = leapYears;
