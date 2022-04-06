@@ -1,15 +1,23 @@
 const ftoc = function(faToCel) 
 {
   let result;
-  result = ((faToCel -32) * (5/9) * 10);
-  return Math.round(result /10);
+  convertTemp = ((faToCel - 32) * (5/9));
+  console.log("firstCalc = " + convertTemp);
+  console.log("MidCalc = " + Math.round(convertTemp * 10));
+  result = Math.round(convertTemp * 10) /10;
+  console.log ("finalCalc = " + result);
+  return result;
 }
 
 const ctof = function(celToFa) 
 {
   let result;
-  result = ((celToFa * (9/5)) + 32 * 10);
-  return Math.round(result /10);
+  convertTemp = (((celToFa * 9/5) + 32));
+  console.log("firstCalc = " + convertTemp);
+  console.log("MidCalc = " + Math.round(convertTemp * 10));
+  result = Math.round(convertTemp * 10) /10;
+  console.log ("finalCalc = " + result);
+  return result;
 }
 
 // Do not edit below this line
